@@ -517,3 +517,8 @@ body{background:var(--blue-50);color:var(--text)}
 .feature-primary .feature-image,.feature-coming::before{-webkit-mask-image:linear-gradient(180deg,#000 0,#000 var(--fade-start),transparent var(--image-end));mask-image:linear-gradient(180deg,#000 0,#000 var(--fade-start),transparent var(--image-end))}
 .featured-grid .feature-card::after{backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);background:linear-gradient(180deg,transparent var(--fade-start),rgba(42,77,106,.5) calc(var(--fade-start) + 40px),rgba(42,77,106,.95) var(--fade-end),#2A4D6A var(--image-end));-webkit-mask-image:linear-gradient(180deg,transparent var(--fade-start),#000 var(--fade-end));mask-image:linear-gradient(180deg,transparent var(--fade-start),#000 var(--fade-end))}
 @media(min-width:761px) and (max-height:800px){.featured-grid .feature-card{--fade-start:90px;--fade-end:180px;--image-end:220px}}
+
+/* Accessible new-tab actions in featured card corners. */
+.feature-open-link{position:absolute;top:16px;right:16px;z-index:3;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;color:#fff;background:rgba(42,77,106,.88);border:1px solid rgba(231,240,247,.5);box-shadow:0 2px 8px rgba(0,0,0,.12);text-decoration:none;transition:background .18s ease}
+.feature-open-link:hover{background:#2A4D6A;color:#fff}
+.feature-open-link:focus-visible{outline:3px solid #E7F0F7;outline-offset:3px}
