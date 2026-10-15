@@ -545,13 +545,13 @@ body{background:var(--blue-50);color:var(--text)}
   position:absolute;
   inset:0;
   pointer-events:none;
-  background:linear-gradient(180deg,transparent 55%,rgba(42,77,106,.4) 78%,#2A4D6A 100%);
+  background:linear-gradient(180deg,transparent 72%,rgba(42,77,106,.4) 90%,#2A4D6A 100%);
   -webkit-backdrop-filter:blur(6px);
   backdrop-filter:blur(6px);
-  -webkit-mask-image:linear-gradient(180deg,transparent 50%,#000 95%);
-  mask-image:linear-gradient(180deg,transparent 50%,#000 95%);
+  -webkit-mask-image:linear-gradient(180deg,transparent 68%,#000 100%);
+  mask-image:linear-gradient(180deg,transparent 68%,#000 100%);
 }
 .feature-primary .feature-image img{
-  -webkit-mask-image:linear-gradient(180deg,#000 70%,transparent 100%);
-  mask-image:linear-gradient(180deg,#000 70%,transparent 100%);
+  -webkit-mask-image:linear-gradient(180deg,#000 85%,transparent 100%);
+  mask-image:linear-gradient(180deg,#000 85%,transparent 100%);
 }
