@@ -484,3 +484,10 @@ body{background:var(--blue-50);color:var(--text)}
 .feature-coming .text-link{align-self:flex-start;min-height:44px;margin-top:18px;padding:10px 16px;border:1px solid rgba(255,255,255,.5);border-radius:12px;background:#E7F0F7;color:#1C3B50;font-size:.9rem;line-height:1.4;text-decoration:none;box-shadow:0 4px 12px rgba(10,31,47,.16);transition:background .18s ease,box-shadow .18s ease}
 .feature-coming .text-link:hover{background:#fff;color:#142B3D;box-shadow:0 6px 16px rgba(10,31,47,.24)}
 .feature-coming .text-link:focus-visible{outline:3px solid #fff;outline-offset:4px}
+
+/* Actual MoveKit interface with a dark reading gradient */
+.feature-coming{position:relative;isolation:isolate;background:#10283B}
+.feature-coming::before{content:"";position:absolute;inset:0;z-index:-2;background:url("assets/img/movekit-preview.svg") center top/100% auto no-repeat}
+.feature-coming::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(16,40,59,.02) 0%,rgba(16,40,59,.16) 24%,rgba(16,40,59,.84) 43%,#10283B 60%)}
+.feature-coming .coming-visual{background:transparent}
+.feature-coming .feature-body p{color:#E7F0F7;opacity:1}
