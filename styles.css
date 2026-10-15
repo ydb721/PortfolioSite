@@ -489,10 +489,10 @@ body{background:var(--blue-50);color:var(--text)}
 .featured-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
 .featured-grid .feature-card{position:relative;isolation:isolate;min-height:560px;background:#10283B;color:#E7F0F7}
 .featured-grid .feature-card::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,transparent 0,transparent 200px,rgba(10,28,43,.88) 240px,rgba(10,28,43,.96) 360px,rgba(10,28,43,.99) 100%)}
-.feature-primary .feature-image{position:absolute;inset:0;height:100%;z-index:-2;background:#10283B}
-.feature-primary .feature-image img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.feature-primary .feature-image{position:absolute;inset:0 0 auto;height:280px;z-index:-2;background:#10283B;overflow:hidden}
+.feature-primary .feature-image img{display:block;width:100%;height:auto;object-fit:contain;object-position:center top}
 .feature-primary .feature-image::after,.feature-primary .feature-image-overlay{display:none}
-.feature-coming::before{content:"";position:absolute;inset:0;z-index:-2;background:url("assets/img/movekit-preview.svg") center top/cover no-repeat}
+.feature-coming::before{content:"";position:absolute;inset:0 0 auto;height:280px;z-index:-2;background:url("assets/img/movekit-preview.svg") center top/100% auto no-repeat}
 .featured-grid .coming-visual{height:220px;flex:0 0 220px;background:transparent}
 .feature-primary .feature-body{margin-top:220px}
 .featured-grid .feature-body{position:relative;z-index:1;background:transparent;padding:22px 24px 24px}
@@ -509,3 +509,5 @@ body{background:var(--blue-50);color:var(--text)}
 #featured .section-heading{margin-bottom:22px}
 #featured .section-heading h2{font-size:clamp(2rem,3vw,2.6rem);margin-bottom:8px}
 @media(min-width:761px) and (max-height:800px){.featured-grid .feature-card{min-height:510px}.featured-grid .coming-visual{height:160px;flex-basis:160px}.feature-primary .feature-body{margin-top:160px}.featured-grid .feature-card::after{background:linear-gradient(180deg,transparent 140px,rgba(10,28,43,.88) 180px,rgba(10,28,43,.97) 300px,rgba(10,28,43,.99) 100%)}#featured.section-block{padding:24px 0}#featured .section-heading{margin-bottom:16px}}
+
+@media(min-width:761px) and (max-height:800px){.feature-primary .feature-image,.feature-coming::before{height:220px}}
