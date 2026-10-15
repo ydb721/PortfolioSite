@@ -522,3 +522,8 @@ body{background:var(--blue-50);color:var(--text)}
 .feature-open-link{position:absolute;top:16px;right:16px;z-index:3;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;color:#fff;background:rgba(42,77,106,.88);border:1px solid rgba(231,240,247,.5);box-shadow:0 2px 8px rgba(0,0,0,.12);text-decoration:none;transition:background .18s ease}
 .feature-open-link:hover{background:#2A4D6A;color:#fff}
 .feature-open-link:focus-visible{outline:3px solid #E7F0F7;outline-offset:3px}
+
+/* Set featured copy against the card bottom after moving actions to corners. */
+.featured-grid .feature-body{flex:0 0 auto;margin-top:auto}
+.featured-grid .coming-visual{flex-shrink:0}
+.featured-grid .feature-body .tag-row{margin-bottom:0}
